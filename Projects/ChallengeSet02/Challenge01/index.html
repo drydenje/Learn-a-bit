@@ -4,21 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mintbean Learn-a-bit Challenge 01 - Header</title>
+    <title>Mintbean Learn-a-bit Challenge 01 - Header - Jeremy Dryden</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
   <body>
-    Photos
-    Pricing
-    Revies
-    Contact
+    <div class="wrapper">
+      <nav>
+        <h2 class="nav-logo">Logo</h2>
+        <!-- https://www.iconfinder.com/icons/3671806/menu_icon -->
+        <img
+          src="./images/3671806_menu_icon.svg"
+          alt="Menu"
+          class="nav-menu-icon"
+        />
+        <input type="checkbox" />
+        <ul id="menu">
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-    Heading 
-    Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit, sed 
-    do eiusmod tempor incididunt 
-    ut labore et dolore magna ali
+      <header>
+        <h1>Heading</h1>
+        <p class="header-p">
+          Lorem ipsum dolor sit amet, consecteture adipiscing elit, sed eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
 
-    Learn More
+        <a href="#" class="learn-more">Learn More</a>
+      </header>
+    </div>
   </body>
 </html>
