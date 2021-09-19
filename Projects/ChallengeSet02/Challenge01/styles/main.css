@@ -65,6 +65,8 @@ nav {
 .nav-menu-icon {
   width: 1.7rem;
   align-self: baseline;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-logo {
@@ -109,8 +111,9 @@ header h1 {
   font-size: 1.1rem;
 }
 
-#menu {
-  /* display: none; */
+.menu {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -118,12 +121,49 @@ header h1 {
   height: 100vh;
   margin: 0;
 
-  background: red;
+  padding: 1rem;
+  color: var(--white);
+  background-color: var(--mako);
   list-style-type: none;
 
-  transform-origin: 0% 0%;
-  /* transform: translate() */
+  transform-origin: -100% 0%;
+  /* transform: translateX(50%); */
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li {
+.menu li {
+  margin: 1rem;
+}
+
+.menu a {
+  font-size: 2rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+nav input:not(:checked) ~ ul {
+  transform: none;
+  transform: translateX(100%);
+}
+
+nav input:checked ~ img {
+  color: blue;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) {
+  body {
+    border: 1px solid yellow;
+  }
+}
+
+/* Portrait tablet to small desktop */
+@media (min-width: 768px) {
+  body {
+    border: 1px solid blue;
+  }
 }

@@ -22,13 +22,15 @@
       <nav>
         <h2 class="nav-logo">Logo</h2>
         <!-- https://www.iconfinder.com/icons/3671806/menu_icon -->
-        <img
-          src="./images/3671806_menu_icon.svg"
-          alt="Menu"
-          class="nav-menu-icon"
-        />
-        <input type="checkbox" />
-        <ul id="menu">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle">
+          <img
+            src="./images/3671806_menu_icon.svg"
+            alt="Menu"
+            class="nav-menu-icon"
+          />
+        </label>
+        <ul class="menu">
           <li><a href="#">Photos</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Reviews</a></li>
