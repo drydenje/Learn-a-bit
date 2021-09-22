@@ -47,7 +47,7 @@ h1 {
   font-size: var(--heading-font-size);
   font-weight: var(--heading-font-weight);
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem 0 2.1rem;
 
   color: var(--black);
 }
@@ -68,7 +68,6 @@ article {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   border: 1px solid var(--offwhite);
   min-height: 300px;
@@ -91,7 +90,7 @@ article {
 .card .description {
   font-family: var(--body-font-family);
   font-weight: var(--font-weight-semiBold);
-  margin-bottom: 1rem;
+  margin: 5.5rem 0 1rem;
 }
 
 .card .price {
@@ -112,7 +111,16 @@ article {
   display: inline-block;
   font-family: var(--body-font-family);
   text-decoration: none;
+  height: 2rem;
+  width: 12rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1.2rem;
+  font-weight: var(--font-weight-semiBold);
+  padding: 0.25em 1.2em;
 
+  border-radius: 10px;
   color: var(--black);
   background-color: var(--goldenrod);
 }
@@ -120,7 +128,20 @@ article {
 .highlighted {
   border: 3px solid var(--goldenrod);
   min-height: 350px;
+  min-width: 250px;
   background: var(--offwhite);
+}
+
+section.highlighted .description {
+  margin-top: 4.7rem;
+}
+
+section.highlighted .price {
+  margin-top: 1.7rem;
+}
+
+section.highlighted .price::first-letter {
+  color: var(--goldenrod);
 }
 
 .card a.hide-me {
