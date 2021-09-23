@@ -1,0 +1,89 @@
+:root {
+  --base-font-size: 125%;
+
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semiBold: 600;
+
+  --heading-font-family: "Poppins", "sans-serif";
+  --heading-font-weight: var(--font-weight-semiBold);
+  --heading-font-size: 2.3rem;
+  --heading-line-height: 3rem;
+
+  --body-font-family: "Open Sans", "sans-serif";
+  --body-font-weight: var(--font-weight-light);
+  --body-font-size: var(--base-font-size);
+  --body-line-height: 1.45rem;
+
+  /* breakpoint sizes */
+  --width-regular: 1600px;
+  --width-tablet: 800px;
+  --width-mobile: 750px;
+
+  /* colours */
+  --black: #232932; /* charade */
+  --mako: #3a3f47;
+  --mako-shadow: #3a3f4787;
+  --iron: #d7d8d9;
+  --alabaster: #fbfbfb;
+  --offwhite: #eeeeee;
+  --white: #ffffff;
+  --goldenrod: #ffd36a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+}
+
+.wrapper {
+  margin: 0;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+h3 {
+  font-family: var(--heading-font-family);
+  font-size: 1rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.card {
+  background-color: var(--goldenrod);
+  border-radius: 10px;
+  /* height: 150px; */
+  width: 310px;
+  padding: 1rem 1.5rem;
+}
+
+ul.rating {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+span.star {
+  color: var(--white);
+  height: 50px;
+  width: 50px;
+}
+
+span.profile-pic {
+  font-size: 3.3rem;
+}
